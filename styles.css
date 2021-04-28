@@ -1,0 +1,36 @@
+   *{
+     box-sizing: border-box;
+   }
+   #header {
+        font-size: 2em;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: gold;
+        border: 2.0px solid black;
+        font-style: italic;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+a:link{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+ font-size:150%;
+ font-family: 'Times New Roman', Times, serif;
+}
