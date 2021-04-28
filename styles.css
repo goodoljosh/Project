@@ -2,29 +2,69 @@
      box-sizing: border-box;
    }
    #header {
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        background-color: gold;
-        border: 2.0px solid black;
-        font-style: italic;
-        grid-column-start: 1;
-        grid-column-end: 5;
+     border:3.0px solid black;
+     font-size: 2em;
+    font-family:cursive;
+    position: static;
+    background-color: gold;
+    grid-column-start:1;
+    grid-column-end:4;
     }
 
-    
+    #nav{
+      border:black;
+     background-color: royalblue;
+    }
 
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
+    #main{
+     font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    background-color: gold;
+    border:3.0px solid black;
+    color:black;
+    }
+
+    #footer{
+    background-color: lightblue;
+    color:black;
+    font-size:1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    padding: 10px;
+    border: 3.0px solid black;
+    grid-column-start:1;
+    grid-column-end:4;
+
+
+    }
+    img{
+     float:left;
+     width:50%;
+     height:200px;
+     display:block;
+     position: static;
+
+    }
+
+    a:hover{
+     color: darkblue;
+
+    }
+
+   @media screen and (max-width: 992px) {
+  body {
+    background-color: lightgray;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  body {
+    background-color: darkcyan;
   }
 }
+    
+
 
 a:link{
   text-decoration: none;
