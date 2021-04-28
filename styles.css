@@ -4,7 +4,7 @@
    #header {
      border:3.0px solid black;
      font-size: 2em;
-    font-family:cursive;
+    font-family:'Times New Roman', Times, serif;
     position: static;
     background-color: gold;
     grid-column-start:1;
@@ -12,8 +12,10 @@
     }
 
     #nav{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.5em;
       border:black;
-     background-color: royalblue;
+     background-color: gold;
     }
 
     #main{
@@ -35,37 +37,32 @@
     border: 3.0px solid black;
     grid-column-start:1;
     grid-column-end:4;
-
-
     }
+
     img{
      float:left;
      width:50%;
      height:200px;
      display:block;
      position: static;
-
     }
 
     a:hover{
-     color: darkblue;
-
+     color: red;
     }
-
-   @media screen and (max-width: 992px) {
-  body {
-    background-color: lightgray;
-  }
+.change {
+  padding: 20px;
+  color: black;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: darkcyan;
-  }
+@media only screen and (max-width: 600px) {
+  .change {background: lightgrey;}
 }
+
+@media only screen and (min-width: 992px) {
+  .change {background: palegreen;}
+} 
     
-
-
 a:link{
   text-decoration: none;
 }

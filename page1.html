@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Home/Index Page</title>
+    <title>Page 1</title>
     <link href="styles.css"
     href="layout.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="wrapper">
-      <header id="header"><img src="images/sheet.jpg"
-     <h1>Welcome to Loud's Music Emporium</h1></header>
+      <header id="header">
+        <h1> <img src="images/sheet.jpg" >
+       Customer Info. Page:
+       </h1>
+       </header>
   <nav id="nav">
   <ul>
    <li><a href="index.html"> HomePage</a></li>
@@ -20,19 +23,52 @@
   </ul>
   </nav>
 
-    <main id ="main"><ul><p>
-       This buisness is raised on the thought that, "if I can do it you can too". My name is Mike Loud and I would like to personally welcome you to my music instrument shop. My goal is to share my passionate love for music with others. Music has always been a big area of my life and now I have the opertunity to share it with others! 
-       -Mike Loud
-      </ul></p>
+    <main id ="main">
+
+       <p class="change">Please fill the customer information page below: Important info is denoted with *(asterisk)</p>
+     <form method="post" action="https://webdevbasics.net/scripts/yoga.php"
+     <fieldset class="frmStyle">
+       <legend>Personal Info</legend>
+    <label for="lName">*Last Name:</label><input type="text" id="lName" name="lName" required="required"></br>
+     <label for="fName">*First Name:</label><input type="text" id="fName" name="fName" required="required"></br>
+     
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd" pattern="{8}" placeholder="Mywaffle"></br></br>
+
+    <label for="state">*State:</label>
+     <select id="state" name="state">
+       <option value="nc">NC</option>
+       <option value="fl">FL</option>
+       <option value="ga">GA</option>
+     </select>
+    </br>
+   
+      <p>Which instrument catagories do you prefer to play?</p>
+      <input type="checkbox" id="object1" name="object1" value="Woodwind">
+      <label for="object1"> Woodwind Instrument</label><br>
+      <input type="checkbox" id="object2" name="object2" value="Strings">
+      <label for="object2"> String Instrument</label><br>
+      <input type="checkbox" id="object3" name="object3" value="Percussion">
+      <label for="object3"> Percussion Instrument</label></br>
+      
+      <label for="comments"> Comment Section:</label>
+      <textarea id="comments" name="comments" rows="5" cols="50">
+        This is the comments section to add additional information you might think is important. </textarea></br>
+        
+        <input type="submit" value="Submit">
+     </form>
     </main>
 
     <footer id="footer">
+      <p class="change">
+      Web Designer: Mikes Music LLc. estb.2021| Founder Mike Loud|</p> 
+      <address>
       Mike Loud's Instrument Emporium
-      Contact Info: mikelovesmusic@gmail.com 
+      Contact Info: <a href="mailto:mikelovesmusic@gmail.com">Mike Loud, <mikelovesmusic@gmail class="com"></mikelovesmusic@gmail>
       Cell Phone #: 866-912-4433
-      
+      </address>
     </footer>
-
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
